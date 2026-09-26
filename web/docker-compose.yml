@@ -7,4 +7,5 @@ services:
     environment:
       JUICEPANS_HOST: "0.0.0.0"
       JUICEPANS_PORT: "8765"
+      # 可选：PANSOU_URL: "http://host.docker.internal:8888"
     restart: unless-stopped
