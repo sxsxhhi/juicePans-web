@@ -9,7 +9,7 @@
 ## 快速开始（Windows）
 
 1. 安装 Python 3.10+，安装时勾选 **Add python.exe to PATH**。
-2. 解压后进入 `juicePans` 文件夹，双击 **`start.bat`**。
+2. 解压后进入绿色版文件夹，双击 **`start.bat`**。
 3. 保持黑色命令行窗口不要关；约 2 秒后浏览器会打开 `http://127.0.0.1:8765/`。
 4. 用完后直接关闭该黑窗口即可停止服务。
 
@@ -32,7 +32,7 @@ python3 server.py
 ## 页面怎么用
 
 - 输入关键词搜索；上方 Tab 可按网盘类型筛选（夸克 / 百度 / 阿里等）。
-- 引擎默认盘搜、小云、海搜；可选盘小子、TG 库。
+- 引擎默认盘搜、小云、海搜；可选盘小子、TA搜（主源无结果时会自动尝试 TA搜 备份）。
 - 结果一律标记为「公开检索（未核验）」——请自行核验后再使用。
 - 破解、色情、赌博类关键词会被拒绝。
 
@@ -53,7 +53,7 @@ GET /api/health
 ```
 
 - `clouds` 为空 = 综合全部；`quark,baidu` 会映射为对应网盘类型。
-- `engines` 默认 `pansou,yunso,haisou`，可含 `panxiaozi`、`ghspider`。
+- `engines` 默认 `pansou,yunso,haisou`，可含 `panxiaozi`、`ataw`。
 
 ## 目录结构
 
@@ -64,7 +64,7 @@ juicePans/
   server.py          # HTTP 服务（stdlib）
   search_core.py     # 多源搜索核心（stdlib）
   static/            # 前端
-  docs/github-research.md
+  docs/              # 部署说明
   README_zh.md
 ```
 
@@ -74,6 +74,7 @@ juicePans/
 |------|------|------|
 | `JUICEPANS_HOST` | `127.0.0.1` | 监听地址 |
 | `JUICEPANS_PORT` | `8765` | 端口 |
+| `PANSOU_URL` | （无） | 可选自建 PanSou 根地址 |
 
 ## 免责声明
 

@@ -53,13 +53,12 @@ ENGINE_ALIAS = {
     "小云": "yunso",
     "海搜": "haisou",
     "盘小子": "panxiaozi",
-    "tg库": "ghspider",
-    "tg": "ghspider",
+    "ta搜": "ataw",
+    "ataw": "ataw",
     "pansou": "pansou",
     "yunso": "yunso",
     "haisou": "haisou",
     "panxiaozi": "panxiaozi",
-    "ghspider": "ghspider",
 }
 
 DEFAULT_ENGINES = "pansou,yunso,haisou"

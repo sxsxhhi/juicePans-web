@@ -263,6 +263,7 @@
       if (data.validate) bits.push("已验链");
       if (data.validate_dropped) bits.push(`隐藏失效 ${data.validate_dropped}`);
       if (data.variant_used) bits.push(`变体「${data.variant_used}」`);
+      if (data.ataw_backup) bits.push("已自动补搜 TA搜");
       if (data.errors && data.errors.length) bits.push(`部分源异常 ${data.errors.length}`);
       setStatus(bits.join(" · "));
       renderResults(data);
